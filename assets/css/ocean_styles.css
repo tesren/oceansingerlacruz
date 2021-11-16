@@ -411,6 +411,7 @@ div.img1 {
 
 h2#slider-text {
     position: absolute;
+    z-index: 100;
     width: 80%;
     top: 20%;
     left: 50%;
@@ -581,8 +582,12 @@ div.text-slider {
 }
 
 .os-fixed-menu a.nav-link{
-  color: #1d345d !important;
+  color: #ffffff !important;
   text-shadow: none !important;
+}
+
+.bg-blue{
+  background-color :#1d345d;
 }
 
 .os-ameniti-desc{
@@ -1060,6 +1065,7 @@ animation-name: fadeInUp;
     }
     
     h2#slider-text {
+      z-index: 100;
       width: 40%;
       top: 30%;
       left: 80%;
@@ -1124,7 +1130,6 @@ animation-name: fadeInUp;
 
     #secondaryHeader li a.nav-link{
       font-size: 1.2rem;
-      color: #1d345d !important;
     }
 
 .contact-section-right{
@@ -1132,6 +1137,10 @@ animation-name: fadeInUp;
     font-size: 18px;
     color: white;
 
+}
+
+#front-gallery img:hover{
+  cursor: pointer;
 }
 
 .btn-primary-osinger{

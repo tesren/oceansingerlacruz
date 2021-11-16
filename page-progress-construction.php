@@ -14,53 +14,16 @@ else {
                         </div>
                         <div class="col-10">
                                 <div id="gallery" style="display:none;">
-                                        <a href="https://oceansingerlacruz.com">
-                                        <img alt="Progress construction"
-                                                src="<?php echo get_template_directory_uri().'/assets/images/progress-construction/thumbs/picture-1.jpg';?>"
-                                                data-image="<?php echo get_template_directory_uri().'/assets/images/progress-construction/high/picture-1.jpg';?>"
-                                                data-description="Progress construction"
-                                                style="display:none">
-                                        </a>
 
+                                <?php for($i=1; $i < 14; $i++):?>
                                         <a href="https://oceansingerlacruz.com">
                                         <img alt="Progress construction"
-                                                src="<?php echo get_template_directory_uri().'/assets/images/progress-construction/thumbs/picture-2.jpg';?>"
-                                                data-image="<?php echo get_template_directory_uri().'/assets/images/progress-construction/high/picture-2.jpg';?>"
+                                                src="<?php echo get_template_directory_uri().'/assets/images/progress-construction/thumbs/image-'.$i.'.jpg';?>"
+                                                data-image="<?php echo get_template_directory_uri().'/assets/images/progress-construction/high/image-'.$i.'.jpg';?>"
                                                 data-description="Progress construction"
                                                 style="display:none">
                                         </a>
-
-                                        <a href="https://oceansingerlacruz.com">
-                                        <img alt="Progress construction"
-                                                src="<?php echo get_template_directory_uri().'/assets/images/progress-construction/thumbs/picture-3.jpg';?>"
-                                                data-image="<?php echo get_template_directory_uri().'/assets/images/progress-construction/high/picture-3.jpg';?>"
-                                                data-description="Progress construction"
-                                                style="display:none">
-                                        </a>
-
-                                        <a href="https://oceansingerlacruz.com">
-                                        <img alt="Progress construction"
-                                                src="<?php echo get_template_directory_uri().'/assets/images/progress-construction/thumbs/picture-4.jpg';?>"
-                                                data-image="<?php echo get_template_directory_uri().'/assets/images/progress-construction/high/picture-4.jpg';?>"
-                                                data-description="Progress construction"
-                                                style="display:none">
-                                        </a>
-
-                                        <a href="https://oceansingerlacruz.com">
-                                        <img alt="Progress construction"
-                                                src="<?php echo get_template_directory_uri().'/assets/images/progress-construction/thumbs/picture-5.jpg';?>"
-                                                data-image="<?php echo get_template_directory_uri().'/assets/images/progress-construction/high/picture-5.jpg';?>"
-                                                data-description="Progress construction"
-                                                style="display:none">
-                                        </a>
-
-                                        <a href="https://oceansingerlacruz.com">
-                                        <img alt="Progress construction"
-                                                src="<?php echo get_template_directory_uri().'/assets/images/progress-construction/thumbs/picture-6.jpg;'?>"
-                                                data-image="<?php echo get_template_directory_uri().'/assets/images/progress-construction/high/picture-6.jpg;'?>"
-                                                data-description="Progress construction"
-                                                style="display:none">
-                                        </a>
+                                <?php endfor; ?>
 
                                 </div>
                         </div>

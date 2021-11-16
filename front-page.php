@@ -43,32 +43,36 @@ else {
             </div>
         </div><!-- Description -->
 
-        <div class="row text-center">
+        <div class="row text-center" id="front-gallery">
             <div class="col-12">
                 
                  <h2 class="text-center animatable fadeInDown">Gallery</h2>
 
                 <div class="row">
                     <div class="col-md-8 mb-3 animatable fadeInUp">
-                         <img class="img-fluid" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/render-balcony.jpg';?>">
+                         <img class="img-fluid" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/render-balcony.jpg';?>" data-fancybox="gallery" loading="lazy" alt="Balcony">
                     </div>
                     <div class="col-md-4">
                         <div class="row">
                             <div class="col-md-12 mb-3 animatable fadeInUp">
-                                <img class="img-fluid" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/render-kitchen.jpg';?>">
+                                <img class="img-fluid" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/render-kitchen.jpg';?>" data-fancybox="gallery" loading="lazy" alt="Kitchen">
                             </div>
                             <div class="col-md-12 animatable fadeInUp">
-                                <img class="img-fluid" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/render-bedroom.jpg';?>">
+                                <img class="img-fluid" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/render-bedroom.jpg';?>" data-fancybox="gallery" loading="lazy" alt="Bedroom">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="row mt-3">
                     <div class="col-md-6 mb-3 animatable fadeInDown">
-                        <img class="img-fluid" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/render-living.jpg';?>">
+                        <img class="img-fluid" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/render-living.jpg';?>" data-fancybox="gallery" loading="lazy" alt="Living Room">
                     </div>
                     <div class="col-md-6 animatable fadeInDown">
-                        <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/pool-render.jpg';?>">
+                        <img class="img-fluid w-100" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/pool-render-new.jpg';?>" data-fancybox="gallery" loading="lazy" alt="Pool">
+
+                        <!--Estas imagenes solo se ven si entras a la galeria-->
+                        <img class="d-none" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/render-rooftop.jpg';?>" data-fancybox="gallery" loading="lazy" alt="Roof top">
+                        <img class="d-none" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/render-rooftop-2.jpg';?>" data-fancybox="gallery" loading="lazy" alt="Roof top">
                     </div>
                 </div>
             </div>
@@ -87,7 +91,7 @@ else {
                                 <i class="fas fa-5x fa-swimming-pool" style="color: #1d345d;"></i>
                             </div>
                             <div class="col-8 col-md-7 os-ameniti-desc">
-                                Swimming pool & Endless Pool
+                                Swimming Pools
                             </div>
                         </div>
                     </div>
@@ -149,6 +153,21 @@ else {
                     </div>
                 </div>
 
+                <div class="row justify-content-center mt-5">
+                    <div class="col-12 col-md-5 amenitie-item animatable fadeInUp">
+                        <div class="row justify-content-center">
+                            <div class="col-3 col-md-3 offset-1">
+                                <img src="<?php echo get_template_directory_uri();?>/assets/svgs/rooftoop1.svg" alt="Rooftop" loading="lazy" style="width:50px;" loading="lazy">
+                            </div>
+                            <div class="col-8 col-md-7 os-ameniti-desc">
+                                Roof Top
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 amenitie-item animatable fadeInUp">
+                    </div>
+                </div>
+
 
  
             </div>
@@ -160,22 +179,22 @@ else {
                         <div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                <img src="<?php echo get_template_directory_uri() .'/assets/images/amenities/parking.jpg';?>" class="d-block w-100" alt="...">
+                                <img src="<?php echo get_template_directory_uri() .'/assets/images/amenities/parking.jpg';?>" class="d-block w-100" loading="lazy" alt="Parking">
                                 </div>
                                 <div class="carousel-item">
-                                <img src="<?php echo get_template_directory_uri() .'/assets/images/amenities/open-area.jpg';?>" class="d-block w-100" alt="...">
+                                <img src="<?php echo get_template_directory_uri() .'/assets/images/amenities/open-area.jpg';?>" class="d-block w-100" loading="lazy" alt="Open Area">
                                 </div>
                                 <div class="carousel-item">
-                                <img src="<?php echo get_template_directory_uri() .'/assets/images/amenities/lobby-area-on-grond-level.jpg';?>" class="d-block w-100" alt="...">
+                                <img src="<?php echo get_template_directory_uri() .'/assets/images/amenities/lobby-area-on-grond-level.jpg';?>" class="d-block w-100" loading="lazy" alt="Lobby">
                                 </div>
                                 <div class="carousel-item">
-                                <img src="<?php echo get_template_directory_uri() .'/assets/images/amenities/gym-sauna.jpg';?>" class="d-block w-100" alt="...">
+                                <img src="<?php echo get_template_directory_uri() .'/assets/images/amenities/gym-sauna.jpg';?>" class="d-block w-100" loading="lazy" alt="Gym">
                                 </div>
                                 <div class="carousel-item">
-                                <img src="<?php echo get_template_directory_uri() .'/assets/images/amenities/swimming-endless-pool.jpg';?>" class="d-block w-100" alt="...">
+                                <img src="<?php echo get_template_directory_uri() .'/assets/images/amenities/swimming-endless-pool.jpg';?>" class="d-block w-100" loading="lazy" alt="Pools">
                                 </div>
                                 <div class="carousel-item ">
-                                <img src="<?php echo get_template_directory_uri() .'/assets/images/amenities/garden-terrace.jpg';?>" class="d-block w-100" alt="...">
+                                <img src="<?php echo get_template_directory_uri() .'/assets/images/amenities/garden-terrace.jpg';?>" class="d-block w-100" loading="lazy" alt="Terrace">
                                 </div>
     
                             </div>
@@ -206,7 +225,30 @@ else {
                     <div class="col-12 col-md-7" style="padding:15px;">
                         <div class="row justify-content-center">
                             <div class="col-12 col-md-10 p-2 p-md-5">
-                                <img class="img-fluid animatable fadeInUp" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/ocean-model.jpg';?>">
+
+                                <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="<?php echo get_template_directory_uri() .'/assets/images/gallery/ocean-model.jpg';?>" class="d-block w-100" alt="Ocean Model" loading="lazy">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="<?php echo get_template_directory_uri() .'/assets/images/gallery/ocean-model-blueprints.jpg';?>" class="d-block w-100" alt="Ocean Model Blueprints" loading="lazy">
+                                        </div>
+                                    
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
 
@@ -237,7 +279,7 @@ else {
                     <div class="col-12 col-md-5">
                         <div class="row">
                             <h4 class="animatable fadeInDown">4th Level View</h4>
-                            <img class="img-fluid" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/4th-level-view-ocean-singer.jpg';?>">
+                            <img class="img-fluid" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/4th-level-view-ocean-singer.jpg';?>" loading="lazy" alt="View">
                         </div>
                         <div class="row mt-3 animatable fadeInUp">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/UUlPKQ2ej_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -256,7 +298,29 @@ else {
                     <div class="col-12 col-md-7 animatable bounceInLeft" style="padding:15px;">
                         <div class="row justify-content-center">
                             <div class="col-12 col-md-10 p-2 p-md-5">
-                                <img class="img-fluid" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/singer-model.jpg';?>">
+                                <div id="carouselSinger" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselSinger" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#carouselSinger" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="<?php echo get_template_directory_uri() .'/assets/images/gallery/singer-model.jpg';?>" class="d-block w-100" alt="Singer Model" loading="lazy">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="<?php echo get_template_directory_uri() .'/assets/images/gallery/singer-model-blueprints.jpg';?>" class="d-block w-100" alt="Singer Model Blueprints" loading="lazy">
+                                        </div>
+                                    
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselSinger" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselSinger" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
 
@@ -288,7 +352,7 @@ else {
                     <div class="col-12 col-md-5">
                         <div class="row">
                             <h4 class="animatable bounceInRight">4th Level View</h4>
-                            <img class="img-fluid animatable bounceInRight" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/4th-level-view-singer-tower.jpg';?>">
+                            <img class="img-fluid animatable bounceInRight" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/4th-level-view-singer-tower.jpg';?>" loading="lazy">
                         </div>
                         <div class="row mt-3 animatable bounceInRight">
                             <iframe width="560" height="315" src="https://www.youtube.com/embed/jkyxlSEFpyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -332,7 +396,7 @@ else {
             <div class="col-12">
                 <div class="row">
                     <div class="col-12 order-2 col-md-6 order-md-1 animatable bounceInLeft">
-                        <img class="img-fluid" src="<?php echo get_template_directory_uri() .'/assets/images/activities/paddle-board.jpg';?>" alt="">
+                        <img class="img-fluid" src="<?php echo get_template_directory_uri() .'/assets/images/activities/paddle-board.jpg';?>" loading="lazy" alt="Paddle Board">
                     </div>
                     <div class="col-12 order-1 col-md-6 order-md-2 animatable bounceInRight">
                         <div class="row justify-content-center os-message-lifestyle">
@@ -356,7 +420,7 @@ else {
                         </div>
                     </div>
                     <div class="col-12 col-md-6 animatable bounceInRight">
-                          <img class="img-fluid" src="<?php echo get_template_directory_uri() .'/assets/images/activities/morning-walk.jpg';?>" alt="">
+                          <img class="img-fluid" src="<?php echo get_template_directory_uri() .'/assets/images/activities/morning-walk.jpg';?>" loading="lazy" alt="Morning Walks">
                     </div>
                 </div>
             </div><!-- Morning walk -->
@@ -364,7 +428,7 @@ else {
             <div class="col-12">
                 <div class="row">
                     <div class="col-12 order-2 col-md-6 order-md-1 animatable bounceInLeft">
-                          <img class="img-fluid" src="<?php echo get_template_directory_uri() .'/assets/images/activities/fishing.jpg';?>" alt="">
+                          <img class="img-fluid" src="<?php echo get_template_directory_uri() .'/assets/images/activities/fishing.jpg';?>" loading="lazy" alt="Fishing">
                     </div>
                     <div class="col-12 order-1 col-md-6 order-md-2 animatable bounceInRight">
                         <div class="row justify-content-center os-message-lifestyle">
@@ -392,7 +456,7 @@ else {
                         
                     </div>
                     <div class="col-12 col-md-6 animatable bounceInRight">
-                          <img class="img-fluid" src="<?php echo get_template_directory_uri() .'/assets/images/activities/international-food.jpg';?>" alt="">
+                          <img class="img-fluid" src="<?php echo get_template_directory_uri() .'/assets/images/activities/international-food.jpg';?>" alt="International Food" loading="lazy">
                     </div>
                 </div>
             </div> <!-- International Gastronomy -->
@@ -400,7 +464,7 @@ else {
             <div class="col-12">
                 <div class="row">
                     <div class="col-12 order-2 col-md-6 order-md-1 animatable bounceInLeft">
-                          <img class="img-fluid" src="<?php echo get_template_directory_uri() .'/assets/images/activities/la-cruz-town.jpg';?>" alt="">
+                          <img class="img-fluid" src="<?php echo get_template_directory_uri() .'/assets/images/activities/la-cruz-town.jpg';?>" alt="Town" loading="lazy">
                     </div>
                     <div class="col-12 order-1 col-md-6 order-md-2 animatable bounceInRight">
                         <div class="row justify-content-center os-message-lifestyle">

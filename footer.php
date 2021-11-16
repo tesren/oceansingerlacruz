@@ -3,11 +3,11 @@
                 <div class="row justify-content-center">
                     <div class="col-12 mt-5 text-center align-self-center">
                         <div>
-                            <img class="footer-logo" width="160" src="<?php echo get_template_directory_uri() .'/assets/svgs/oceansinger/remax-on-the-bay-logo.svg';?>" alt="Logo Ocean Singer"><br>
+                            <img class="footer-logo" width="160" src="<?php echo get_template_directory_uri() .'/assets/svgs/oceansinger/remax-on-the-bay-logo.svg';?>" loading="lazy" alt="Logo Ocean Singer"><br>
 
                         </div>
                         <div class="mt-5">
-                            <img class="footer-logo" width="320" src="<?php echo get_template_directory_uri() .'/assets/images/ocean-singer-logo.png';?>" alt="Logo Ocean Singer">
+                            <img class="footer-logo" width="320" src="<?php echo get_template_directory_uri() .'/assets/images/ocean-singer-logo.png';?>" loading="lazy" alt="Logo Ocean Singer">
 
                         </div>
                     </div>
