@@ -1,18 +1,20 @@
-<?php 
-if(is_front_page()) {
- get_header('front');
-}
-else {
- get_header();
-} ?>
+<?php get_header('front');?>
+
+    <div class="row justify-content-center" id='homeVideoContainer'>
+        <video autoplay muted loop autoplay id="homeVideo">
+            <source src="<?php echo get_template_directory_uri() .'/assets/videos/video-ocean-new.m4v';?>" type="video/mp4">
+        </video>
+    </div>
+
         <div class="row parallax-os-container">
-            <section id="slider"style="height:100vh;">
+            <section id="slider"style="height:90vh;">
                 <div id="content-images-slider">
-                    <div class="image-slider rellax img2" data-rellax-speed="-10" style='background-image: url(<?php echo get_template_directory_uri() .'/assets/images/slider-4.jpg'?>)'></div>
+                    <!-- <div class="image-slider rellax img2" data-rellax-speed="-10" style='background-image: url(<?php echo get_template_directory_uri() .'/assets/images/slider-4.jpg'?>)'></div> -->
                     <div class="text-slider rellax" data-rellax-speed="-2">
                         <h2 class="animatable fadeIn" id='slider-text'>Exclusive 12 Unit<br> High-End<br>Boutique Condos</h2>
                     </div>
-                    <div class="image-slider img1" style='background-image: url(<?php echo get_template_directory_uri() .'/assets/images/slider-1.png';?>)'></div>
+                    <!-- <div class="image-slider img1" style='background-image: url(<?php //echo get_template_directory_uri() .'/assets/images/slider-1.png';?>)'></div> -->
+                    <img class="w-100" src="<?php echo get_template_directory_uri().'/assets/images/gallery/render-building.jpg'; ?>" alt="Building Render" loading="lazy" style="height:90vh; object-fit:cover;">
                 </div>
             </section>
             <!-- <section id="content"></section> -->
@@ -164,8 +166,8 @@ else {
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-5 amenitie-item animatable fadeInUp">
-                    </div>
+                    <!-- <div class="col-12 col-md-5 amenitie-item animatable fadeInUp">
+                    </div> -->
                 </div>
 
 
@@ -222,9 +224,9 @@ else {
             </div>
             <div class="col-12" style="background:#fbfbfb;" >
                 <div class="row">
-                    <div class="col-12 col-md-7" style="padding:15px;">
+                    <div class="col-12" style="padding:15px;">
                         <div class="row justify-content-center">
-                            <div class="col-12 col-md-10 p-2 p-md-5">
+                            <div class="col-12 col-md-10 col-lg-8 p-2 p-md-5">
 
                                 <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
                                     <div class="carousel-indicators">
@@ -276,18 +278,24 @@ else {
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-5">
-                        <div class="row">
+                    <div class="col-12">
+                        <div class="row text-center">
                             <h4 class="animatable fadeInDown">4th Level View</h4>
-                            <img class="img-fluid" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/4th-level-view-ocean-singer.jpg';?>" loading="lazy" alt="View">
-                        </div>
-                        <div class="row mt-3 animatable fadeInUp">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/UUlPKQ2ej_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                            <div class="col-12 col-lg-8">
+                                <img class="img-fluid" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/4th-level-view-ocean-singer.jpg';?>" loading="lazy" alt="View">
+                            </div>
+
+                            <div class="col-12 col-lg-4 mt-3 mt-lg-0 animatable fadeInUp">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/UUlPKQ2ej_c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div><!--Ocean Model-->
+
         <!-- PH VIDEO<iframe width="560" height="315" src="https://www.youtube.com/embed/KBcVzCi6_hU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
         <div class="row text-center">
             <div class="col-12 mt-5">
@@ -295,9 +303,9 @@ else {
             </div>
             <div class="col-12" style="background:#fbfbfb;" >
                 <div class="row">
-                    <div class="col-12 col-md-7 animatable bounceInLeft" style="padding:15px;">
+                    <div class="col-12" style="padding:15px;">
                         <div class="row justify-content-center">
-                            <div class="col-12 col-md-10 p-2 p-md-5">
+                            <div class="col-12 col-md-10 col-lg-8 p-2 p-md-5">
                                 <div id="carouselSinger" class="carousel carousel-dark slide" data-bs-ride="carousel">
                                     <div class="carousel-indicators">
                                         <button type="button" data-bs-target="#carouselSinger" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -325,7 +333,7 @@ else {
                         </div>
 
                         <div class="row" style="font-size:1.1rem;">
-                            <div class="col-5 col-md-4 offset-md-2 animatable bounceInLeft">
+                            <div class="col-5 col-md-4 offset-md-2 animatable fadeInDown">
                                 <ul class="list-unstyled">
                                     <li class="list-item">1,539 ft<sup>2</sup></li>
                                     <li class="list-item">2 Bed</li>
@@ -338,7 +346,7 @@ else {
 
                             <div class="col-7 col-md-6">
 
-                                <ul class="list-unstyled animatable bounceInLeft">
+                                <ul class="list-unstyled animatable fadeInUp">
                                     <li class="list-item">Open Kitchen & Living Area</li>
                                     <li class="list-item">Marina, Ocean & Mountain View</li>
                                      <li class="list-item">Covered Parking</li>
@@ -349,14 +357,19 @@ else {
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-5">
+                    <div class="col-12">
                         <div class="row">
-                            <h4 class="animatable bounceInRight">4th Level View</h4>
-                            <img class="img-fluid animatable bounceInRight" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/4th-level-view-singer-tower.jpg';?>" loading="lazy">
+                            <h4 class="animatable fadeInDown">4th Level View</h4>
+
+                            <div class="col-12 col-lg-8">
+                                <img class="img-fluid animatable fadeInUp" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/4th-level-view-singer-tower.jpg';?>" loading="lazy">
+                            </div>
+                        
+                            <div class="col-12 col-lg-4 mt-3 mt-lg-0 animatable fadeInDown">
+                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/jkyxlSEFpyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+                            </div>
                         </div>
-                        <div class="row mt-3 animatable bounceInRight">
-                            <iframe width="560" height="315" src="https://www.youtube.com/embed/jkyxlSEFpyM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -366,17 +379,16 @@ else {
              <h2 >La Cruz</h2>
           </div>
         </div>
-        <div class="row" style="height:110vh;background-image: url(<?php echo get_template_directory_uri() .'/assets/images/marina-la-cruz.jpg';?>); image-reapeat:none; background-position: bottom center; background-size: cover;">
+        <div class="row" style="min-height:80vh;background-image: url(<?php echo get_template_directory_uri() .'/assets/images/marina-la-cruz.jpg';?>); image-reapeat:none; background-position: bottom center; background-size: cover;">
         </div><!-- La Cruz -->
 
-        <div class="row">
-            <div id="map" style="height:600px;"></div>
-            <div class="interest-points"> 
-            </div>
+        <div class="row" style="height:600px;">
+            <iframe class="px-0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14924.092528263764!2d-105.38050670427145!3d20.74985649375142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842141cc1f83b9c7%3A0x8ee25640ab0dcc32!2sOcean%20Singer%20La%20Cruz!5e0!3m2!1ses-419!2smx!4v1637170705253!5m2!1ses-419!2smx" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div><!-- Location Map -->
 
-         <div class="row" style="height:90vh;background-image: url(<?php echo get_template_directory_uri() .'/assets/images/ocean-singer-location.jpg';?>); image-reapeat:none; background-position: bottom center; background-size: cover;">
-        </div><!-- La Cruz -->
+         <div class="row mb-5">
+            <img class="px-0 w-100" src="<?php echo get_template_directory_uri() .'/assets/images/ocean-singer-location.jpg';?>" alt="Ocean Singer Location" loading="lazy" style="min-height:50vh; object-fit:cover;">
+         </div><!-- La Cruz -->
 
          <div class="row text-center">
              <div class="col-12">
@@ -395,10 +407,10 @@ else {
          <div class="row lifestyle-section">
             <div class="col-12">
                 <div class="row">
-                    <div class="col-12 order-2 col-md-6 order-md-1 animatable bounceInLeft">
+                    <div class="col-12 order-2 col-md-6 order-md-1 animatable fadeInDown">
                         <img class="img-fluid" src="<?php echo get_template_directory_uri() .'/assets/images/activities/paddle-board.jpg';?>" loading="lazy" alt="Paddle Board">
                     </div>
-                    <div class="col-12 order-1 col-md-6 order-md-2 animatable bounceInRight">
+                    <div class="col-12 order-1 col-md-6 order-md-2 animatable fadeInUp">
                         <div class="row justify-content-center os-message-lifestyle">
                             <div class="col-11 col-md-8 align-self-center">
                                  <h3> Paddleboarding </h3>
@@ -411,7 +423,7 @@ else {
 
             <div class="col-12">
                 <div class="row">
-                    <div class="col-12 col-md-6 animatable bounceInLeft">
+                    <div class="col-12 col-md-6 animatable fadeInDown">
                         <div class="row justify-content-center os-message-lifestyle">
                             <div class="col-11 col-md-8 align-self-center">
                                  <h3>Morning walk</h3>
@@ -419,7 +431,7 @@ else {
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 animatable bounceInRight">
+                    <div class="col-12 col-md-6 animatable fadeInUp">
                           <img class="img-fluid" src="<?php echo get_template_directory_uri() .'/assets/images/activities/morning-walk.jpg';?>" loading="lazy" alt="Morning Walks">
                     </div>
                 </div>
@@ -427,10 +439,10 @@ else {
 
             <div class="col-12">
                 <div class="row">
-                    <div class="col-12 order-2 col-md-6 order-md-1 animatable bounceInLeft">
+                    <div class="col-12 order-2 col-md-6 order-md-1 animatable fadeInDown">
                           <img class="img-fluid" src="<?php echo get_template_directory_uri() .'/assets/images/activities/fishing.jpg';?>" loading="lazy" alt="Fishing">
                     </div>
-                    <div class="col-12 order-1 col-md-6 order-md-2 animatable bounceInRight">
+                    <div class="col-12 order-1 col-md-6 order-md-2 animatable fadeInUp">
                         <div class="row justify-content-center os-message-lifestyle">
                             <div class="col-11 col-md-8 align-self-center">
                                 <h3>Sport Fishing</h3>
@@ -446,7 +458,7 @@ else {
 
             <div class="col-12">
                 <div class="row">
-                    <div class="col-12 col-md-6 animatable bounceInLeft">
+                    <div class="col-12 col-md-6 animatable fadeInDown">
                         <div class="row justify-content-center os-message-lifestyle">
                             <div class="col-11 col-md-8 align-self-center ">
                                  <h3>International Gastronomy</h3>
@@ -455,7 +467,7 @@ else {
                         </div>
                         
                     </div>
-                    <div class="col-12 col-md-6 animatable bounceInRight">
+                    <div class="col-12 col-md-6 animatable fadeInUp">
                           <img class="img-fluid" src="<?php echo get_template_directory_uri() .'/assets/images/activities/international-food.jpg';?>" alt="International Food" loading="lazy">
                     </div>
                 </div>
@@ -463,10 +475,10 @@ else {
 
             <div class="col-12">
                 <div class="row">
-                    <div class="col-12 order-2 col-md-6 order-md-1 animatable bounceInLeft">
+                    <div class="col-12 order-2 col-md-6 order-md-1 animatable fadeInDown">
                           <img class="img-fluid" src="<?php echo get_template_directory_uri() .'/assets/images/activities/la-cruz-town.jpg';?>" alt="Town" loading="lazy">
                     </div>
-                    <div class="col-12 order-1 col-md-6 order-md-2 animatable bounceInRight">
+                    <div class="col-12 order-1 col-md-6 order-md-2 animatable fadeInUp">
                         <div class="row justify-content-center os-message-lifestyle">
                             <div class="col-11 col-md-8 align-self-center">
                                 <h3>Live like at home</h3>

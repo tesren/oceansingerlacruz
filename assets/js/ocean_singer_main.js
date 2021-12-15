@@ -1,10 +1,7 @@
 
-$('#mainHeader').removeClass('bg-blue os-fixed-menu');
+/* $('#mainHeader').removeClass('bg-blue os-fixed-menu');
 $('#mainHeader').removeClass('fixed-top');
 $('#brand').addClass('d-none');
-
-
-$('#header-items li').addClass('col-lg').addClass('p-0');
 
 $(window).scroll(function () {
 
@@ -39,8 +36,8 @@ $(window).scroll(function () {
     }
 
 
-});
-
+}); */
+$('#header-items li').addClass('col-lg').addClass('p-0');
     
     var rellax = new Rellax('.rellax', {
         wrapper: '.parallax-os-container'

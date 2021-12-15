@@ -1,8 +1,4 @@
-<?php /*
-@package vallarta4yourentalstheme
-*/
-get_header(); 
-?>
+<?php get_header('front');?>
 <article class="v4you-page-dark-color mt-5">
 <?php the_title('<h1 class="v4you-title">','</h1>');?>
 

@@ -1,11 +1,6 @@
-<?php 
-if(is_front_page()) {
- get_header('front');
-}
-else {
- get_header();
-} ?>
-<div class="row">
+<?php get_header('front');?>
+
+<div class="row" id="progress-page">
 
         <div class="container mb-5">
                 <div class="row justify-content-center">

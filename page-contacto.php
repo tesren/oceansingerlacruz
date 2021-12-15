@@ -1,8 +1,5 @@
-<?php /*
-@package vallarta4yourentalstheme
-*/
-get_header(); 
-?>
+<?php get_header('front');?>
+
 <article class="container-fluid">
 <div class="row justify-content-center">
     <div class="col-10">

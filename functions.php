@@ -31,7 +31,7 @@ function cb_register_styles(){
     wp_enqueue_style('cb-style', get_template_directory_uri() . "/style.css", array('cb-bootstrap'), $version , 'all');
     // wp_enqueue_style('cb-bootstrap', "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css", array(), '5.0.0', 'all');
     wp_enqueue_style('cb-bootstrap', get_template_directory_uri() . "/assets/css/bootstrap.min.css", array(), '5.0.0', 'all');
-    wp_enqueue_style('cb-style-primary', get_template_directory_uri() . "/assets/css/ocean_styles.css", array(), $version , 'all');
+    wp_enqueue_style('cb-style-primary', get_template_directory_uri() . "/assets/css/ocean_singer_styles.css", array(), $version , 'all');
     wp_enqueue_style('cb-fontawesome', get_template_directory_uri() . "/assets/css/all.min.css", array(), '5.15.1' , 'all');
     wp_enqueue_style('onere-fancybox', "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css", array(), '1.0.0', 'all');
     //Fontawesome cdn
@@ -48,10 +48,10 @@ function cb_register_scripts(){
     $version = wp_get_theme()->get( 'Version' );
     wp_enqueue_script('v4you_jquery', 'https://code.jquery.com/jquery-3.5.1.min.js', array(), '3.5.1', true);
     wp_enqueue_script('cb_bootstrap', get_template_directory_uri() .  '/assets/js/bootstrap.min.js', array(), '5.0.0', true);
-    wp_enqueue_script('os_gmaps', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDlDmMESUjBK1gwNJm5x4hyoS90qacpJmY&callback=initMap#asyncload', array(), '', true);
+    //wp_enqueue_script('os_gmaps', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDlDmMESUjBK1gwNJm5x4hyoS90qacpJmY&callback=initMap#asyncload', array(), '', true);
     wp_enqueue_script('cb_fontawesome', get_template_directory_uri() .  '/assets/js/all.min.js', array(), '5.15.1', true);
     wp_enqueue_script('os_reallax', get_template_directory_uri() .  '/assets/js/vendor/rellax.min.js', array(), '1', true);
-    wp_enqueue_script('v4you_main', get_template_directory_uri() .  '/assets/js/ocean_main.js', array('v4you_jquery'), $version, true);
+    wp_enqueue_script('v4you_main', get_template_directory_uri() .  '/assets/js/ocean_singer_main.js', array('v4you_jquery'), $version, true);
     wp_enqueue_script('one_fancybox', 'https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js', array(), '1.0.0', true);
     if ( is_page( 'progress-construction' ) ) {
         wp_enqueue_script('os-gallery', get_template_directory_uri() . "/assets/js/vendor/unitegallery.min.js", array(), $version , true);

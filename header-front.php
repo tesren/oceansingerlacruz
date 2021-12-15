@@ -17,20 +17,16 @@
 
       <div class="container-fluid">
 
-        <header class="row justify-content-center" id='homeVideoContainer'>
-
-            <video autoplay muted loop autoplay id="homeVideo">
-                <source src="<?php echo get_template_directory_uri() .'/assets/videos/video-ocean-singer-2.m4v';?>" type="video/mp4">
-            </video>
+        <header class="row justify-content-center" >
 
             <div class="col-12 col-md-9 align-self-center text-center" id="navMenuContainer">
 
-                <div class="row text-center mb-5">
+                <!-- <div class="row text-center mb-5">
                     <img class="img-fluid" src="<?php echo get_template_directory_uri() .'/assets/images/ocean-singer-logo.svg';?>" alt="Ocean Singer La Cuz Brand">
-                </div>
+                </div> -->
 
                 <div class="row">
-                    <nav class="navbar navbar-expand navbar-light bg-blue" id="mainHeader">
+                    <nav class="navbar navbar-light bg-blue os-fixed-menu fixed-top navbar-expand-lg" id="mainHeader">
 
                     <div class="container-fluid d-block p-0">
 
@@ -75,7 +71,7 @@
                     </nav>
                 </div>
             </div>
-            <div class="overlay"></div>
+            <!-- <div class="overlay"></div> -->
         <!-- Menu -->
         </header>
 

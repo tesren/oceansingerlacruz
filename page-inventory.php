@@ -1,12 +1,5 @@
-<?php /*
-@package vallarta4yourentalstheme
-*/
-if(is_front_page()) {
- get_header('front');
-}
-else {
- get_header();
-} ?>
+<?php get_header('front');?>
+
 <div class="row">
     <div class="container">
 

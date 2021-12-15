@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('front');?>
 <article>
 <h1><?php the_title();?></h1>
 <h2 style="color:#fff;">Hola</h2>
