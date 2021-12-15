@@ -401,6 +401,7 @@ p{
 
 }
 
+
 div.img1 {
         background-size: 250%;
     }
@@ -610,6 +611,16 @@ div.text-slider {
   color: white;
 }
 
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: #1d345d !important;
+  background-color: transparent !important;
+  border-bottom: 2px solid #f3b72a;
+  border-radius: 0 !important;
+}
+
+.nav-pills .nav-link {
+  color: #1d345d;
+}
 
 /*Animaciones*/
 .animatable {
@@ -1156,9 +1167,9 @@ animation-name: fadeInUp;
     h2#slider-text {
       z-index: 100;
       width: 40%;
-      top: 30%;
+      top: 65%;
       left: 80%;
-      font-size: 3.8em;
+      font-size: 2.8em;
     }
 
     .os-message-lifestyle{
@@ -1168,7 +1179,7 @@ animation-name: fadeInUp;
     }
 
     .titles-over-image{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
   .amenitie-item{

@@ -34,6 +34,7 @@ function cb_register_styles(){
     wp_enqueue_style('cb-style-primary', get_template_directory_uri() . "/assets/css/ocean_singer_styles.css", array(), $version , 'all');
     wp_enqueue_style('cb-fontawesome', get_template_directory_uri() . "/assets/css/all.min.css", array(), '5.15.1' , 'all');
     wp_enqueue_style('onere-fancybox', "https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css", array(), '1.0.0', 'all');
+    wp_enqueue_style('ocean-gliderjs', get_template_directory_uri() . "/assets/css/glider.min.css", array(), '1.0.0', 'all');
     //Fontawesome cdn
     //wp_enqueue_style('cb-fontawesome', "/style.css", array(), '1.0', 'all');
     if ( is_page( 'progress-construction' ) ) {
@@ -51,8 +52,12 @@ function cb_register_scripts(){
     //wp_enqueue_script('os_gmaps', 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDlDmMESUjBK1gwNJm5x4hyoS90qacpJmY&callback=initMap#asyncload', array(), '', true);
     wp_enqueue_script('cb_fontawesome', get_template_directory_uri() .  '/assets/js/all.min.js', array(), '5.15.1', true);
     wp_enqueue_script('os_reallax', get_template_directory_uri() .  '/assets/js/vendor/rellax.min.js', array(), '1', true);
+    wp_enqueue_style('ocean_gliderjscompat', get_template_directory_uri() . "/assets/js/glider-compat.min.js", array(), '1.0.0', 'all');
+    wp_enqueue_style('ocean_gliderjs', get_template_directory_uri() . "/assets/js/glider.min.js", array(), '1.0.0', 'all');
     wp_enqueue_script('v4you_main', get_template_directory_uri() .  '/assets/js/ocean_singer_main.js', array('v4you_jquery'), $version, true);
     wp_enqueue_script('one_fancybox', 'https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js', array(), '1.0.0', true);
+    
+
     if ( is_page( 'progress-construction' ) ) {
         wp_enqueue_script('os-gallery', get_template_directory_uri() . "/assets/js/vendor/unitegallery.min.js", array(), $version , true);
         wp_enqueue_script('theme-gallery', get_template_directory_uri() . "/assets/themes/tiles/ug-theme-tiles.js", array(), $version , true);
@@ -80,11 +85,14 @@ add_filter( 'clean_url', 'os_async_scripts', 11, 1 );
 		==========================================
 			INCLUDE WALKER FILTER
 		==========================================
-
 	*/
-
-	require get_template_directory() . '/inc/walker-header.php';
-
+    /**
+     * Register Custom Navigation Walker
+     */
+    function register_navwalker(){
+        require_once get_template_directory() . '/classes/class-wp-bootstrap-navwalker.php';
+    }
+    add_action( 'after_setup_theme', 'register_navwalker' );
 
 /*
 		==========================================

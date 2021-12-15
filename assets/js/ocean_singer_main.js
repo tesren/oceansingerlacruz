@@ -175,3 +175,15 @@ $('#header-items li').addClass('col-lg').addClass('p-0');
         
         }); 
 
+
+      window.addEventListener('load', function(){
+      var glider = new Glider(document.querySelector('.glider'), {
+            slidesToShow: 3,
+            dots: '.dots',
+            draggable: false,
+            arrows: {
+                prev: '.glider-prev',
+                next: '.glider-next'
+            }
+        })
+      });

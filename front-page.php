@@ -176,39 +176,37 @@
 
             <div class="col-12 mt-5">
                 <div class="row justify-content-center">
-                    <div class="col-11">
+                    <div class="col-11 col-lg-8">
 
-                        <div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                <img src="<?php echo get_template_directory_uri() .'/assets/images/amenities/parking.jpg';?>" class="d-block w-100" loading="lazy" alt="Parking">
+                        <div class="glider-contain">
+                            <div class="glider">
+                                <div>
+                                    <img src="<?php echo get_template_directory_uri() .'/assets/images/amenities/parking.jpg';?>" class="d-block w-100" loading="lazy" alt="Parking">
                                 </div>
-                                <div class="carousel-item">
-                                <img src="<?php echo get_template_directory_uri() .'/assets/images/amenities/open-area.jpg';?>" class="d-block w-100" loading="lazy" alt="Open Area">
+                                <div>
+                                    <img src="<?php echo get_template_directory_uri() .'/assets/images/amenities/open-area.jpg';?>" class="d-block w-100" loading="lazy" alt="Open Area">
                                 </div>
-                                <div class="carousel-item">
-                                <img src="<?php echo get_template_directory_uri() .'/assets/images/amenities/lobby-area-on-grond-level.jpg';?>" class="d-block w-100" loading="lazy" alt="Lobby">
+                                <div>
+                                    <img src="<?php echo get_template_directory_uri() .'/assets/images/amenities/lobby-area-on-grond-level.jpg';?>" class="d-block w-100" loading="lazy" alt="Lobby">
                                 </div>
-                                <div class="carousel-item">
-                                <img src="<?php echo get_template_directory_uri() .'/assets/images/amenities/gym-sauna.jpg';?>" class="d-block w-100" loading="lazy" alt="Gym">
+                                <div>
+                                    <img src="<?php echo get_template_directory_uri() .'/assets/images/amenities/gym-sauna.jpg';?>" class="d-block w-100" loading="lazy" alt="Gym">
                                 </div>
-                                <div class="carousel-item">
-                                <img src="<?php echo get_template_directory_uri() .'/assets/images/amenities/swimming-endless-pool.jpg';?>" class="d-block w-100" loading="lazy" alt="Pools">
+                                <div>
+                                    <img src="<?php echo get_template_directory_uri() .'/assets/images/amenities/swimming-endless-pool.jpg';?>" class="d-block w-100" loading="lazy" alt="Pools">
                                 </div>
-                                <div class="carousel-item ">
-                                <img src="<?php echo get_template_directory_uri() .'/assets/images/amenities/garden-terrace.jpg';?>" class="d-block w-100" loading="lazy" alt="Terrace">
+                                <div>
+                                    <img src="<?php echo get_template_directory_uri() .'/assets/images/amenities/garden-terrace.jpg';?>" class="d-block w-100" loading="lazy" alt="Terrace">
                                 </div>
-    
+
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
+
+                            <button aria-label="Previous" class="glider-prev">«</button>
+                            <button aria-label="Next" class="glider-next">»</button>
+                            <div role="tablist" class="dots"></div>
                         </div>
+
+                       
                     </div>
                     <!-- <video autoplay muted loop autoplay>
                         <source src="<?php //echo get_template_directory_uri() .'/assets/videos/common-areas.m4v';?>" type="video/mp4">
@@ -218,7 +216,7 @@
         
         </div><!-- Amenities -->
 
-        <div class="row text-center">
+        <div class="row text-center" id="ocean-model">
             <div class="col-12 mt-5">
                 <h2 class="animatable fadeInDown">Ocean Model</h2>
             </div>
@@ -228,29 +226,24 @@
                         <div class="row justify-content-center">
                             <div class="col-12 col-md-10 col-lg-8 p-2 p-md-5">
 
-                                <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                                    <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <ul class="nav nav-pills mb-3 text-center justify-content-center" id="pills-tab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Model</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Blueprint</button>
+                                    </li>
+                                </ul>
+
+                                <div class="tab-content" id="pills-tabContent">
+                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                        <img src="<?php echo get_template_directory_uri() .'/assets/images/gallery/ocean-model.jpg';?>" class="d-block w-100" alt="Ocean Model" loading="lazy" data-fancybox="ocean-gal">
                                     </div>
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="<?php echo get_template_directory_uri() .'/assets/images/gallery/ocean-model.jpg';?>" class="d-block w-100" alt="Ocean Model" loading="lazy">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="<?php echo get_template_directory_uri() .'/assets/images/gallery/ocean-model-blueprints.jpg';?>" class="d-block w-100" alt="Ocean Model Blueprints" loading="lazy">
-                                        </div>
-                                    
+                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                        <img src="<?php echo get_template_directory_uri() .'/assets/images/gallery/ocean-model-blueprints.jpg';?>" class="d-block w-100" alt="Ocean Model Blueprints" loading="lazy" data-fancybox="ocean-gal">
                                     </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
                                 </div>
+                   
                             </div>
                         </div>
 
@@ -297,7 +290,7 @@
         </div><!--Ocean Model-->
 
         <!-- PH VIDEO<iframe width="560" height="315" src="https://www.youtube.com/embed/KBcVzCi6_hU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-        <div class="row text-center">
+        <div class="row text-center" id="singer-model">
             <div class="col-12 mt-5">
                 <h2 class="animatable fadeInDown">Singer Model</h2>
             </div>
@@ -306,29 +299,26 @@
                     <div class="col-12" style="padding:15px;">
                         <div class="row justify-content-center">
                             <div class="col-12 col-md-10 col-lg-8 p-2 p-md-5">
-                                <div id="carouselSinger" class="carousel carousel-dark slide" data-bs-ride="carousel">
-                                    <div class="carousel-indicators">
-                                        <button type="button" data-bs-target="#carouselSinger" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                        <button type="button" data-bs-target="#carouselSinger" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                    </div>
-                                    <div class="carousel-inner">
-                                        <div class="carousel-item active">
-                                            <img src="<?php echo get_template_directory_uri() .'/assets/images/gallery/singer-model.jpg';?>" class="d-block w-100" alt="Singer Model" loading="lazy">
-                                        </div>
-                                        <div class="carousel-item">
-                                            <img src="<?php echo get_template_directory_uri() .'/assets/images/gallery/singer-model-blueprints.jpg';?>" class="d-block w-100" alt="Singer Model Blueprints" loading="lazy">
-                                        </div>
-                                    
-                                    </div>
-                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselSinger" data-bs-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Previous</span>
-                                    </button>
-                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselSinger" data-bs-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                        <span class="visually-hidden">Next</span>
-                                    </button>
+
+                            <ul class="nav nav-pills mb-3 text-center justify-content-center" id="pills-tab-singer" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pill-singer-model" data-bs-toggle="pill" data-bs-target="#pills-singer-model" type="button" role="tab" aria-controls="pills-singer-model" aria-selected="true">Model</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pill-singer-blue" data-bs-toggle="pill" data-bs-target="#pills-singer-blue" type="button" role="tab" aria-controls="pills-singer-blue" aria-selected="false">Blueprints</button>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-singer-model" role="tabpanel" aria-labelledby="pills-singer-model-tab">
+                                    <img src="<?php echo get_template_directory_uri() .'/assets/images/gallery/singer-model.jpg';?>" class="d-block w-100" alt="Singer Model" loading="lazy" data-fancybox="singer-gal">
                                 </div>
+
+                                <div class="tab-pane fade" id="pills-singer-blue" role="tabpanel" aria-labelledby="pills-singer-blue-tab">
+                                    <img src="<?php echo get_template_directory_uri() .'/assets/images/gallery/singer-model-blueprints.jpg';?>" class="d-block w-100" alt="Singer Model Blueprints" loading="lazy" data-fancybox="singer-gal">
+                                </div>
+                            </div>        
+                                
                             </div>
                         </div>
 
@@ -387,7 +377,7 @@
         </div><!-- Location Map -->
 
          <div class="row mb-5">
-            <img class="px-0 w-100" src="<?php echo get_template_directory_uri() .'/assets/images/ocean-singer-location.jpg';?>" alt="Ocean Singer Location" loading="lazy" style="min-height:50vh; object-fit:cover;">
+            <img class="px-0 w-100" src="<?php echo get_template_directory_uri() .'/assets/images/oceansinger-location-min.jpg';?>" alt="Ocean Singer Location" loading="lazy" style="min-height:50vh; object-fit:cover;">
          </div><!-- La Cruz -->
 
          <div class="row text-center">
@@ -396,8 +386,8 @@
              </div>
              <div class="col-12">
                  <div class="row justify-content-start justify-content-md-start" style="height:90vh;background-image: url(<?php echo get_template_directory_uri() .'/assets/images/couple-in-pool.jpg';?>); image-reapeat:none; background-position: bottom center; background-size: cover; ">
-                     <div class="col-4" style="margin-top:80px;">
-                        <h4 class="titles-over-image ms-3 animatable fadeIn">Simply spectacular sunrises and sunsets!</h4>
+                     <div class="col-6" style="margin-top:80px;">
+                        <h4 class="titles-over-image ms-3 animatable fadeIn text-start">Simply spectacular sunrises and sunsets!</h4>
                      </div>
                  </div>
              </div>

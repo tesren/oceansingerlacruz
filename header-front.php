@@ -47,9 +47,11 @@
                                     [
                                         'menu'        => 'primary',
                                         'container'   => '',
+                                        'depth'       => 2,
                                         'theme_location' => 'primary',
                                         'items_wrap'  => '<ul id="header-items" class="navbar-nav row justify-content-center mx-auto">%3$s</ul>',
-                                        'walker' => new Walker_Nav_Primary(),
+                                        'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+                                        'walker'            => new WP_Bootstrap_Navwalker(),
                                     ]
                                 )
                             ?>

@@ -44,14 +44,3 @@
             </div>   
         </header>
 
-  <?php
-      // wp_nav_menu(
-      //     [
-      //         'menu'        => 'primary',
-      //         'container'   => '',
-      //         'theme_location' => 'primary',
-      //         'items_wrap'  => '<ul>%3$s</ul>',
-      //         'walker' => new Walker_Nav_Primary(),
-      //     ]
-      // )
-  ?>
