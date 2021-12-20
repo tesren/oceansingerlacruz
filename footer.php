@@ -26,6 +26,27 @@
             </div>    
         </footer>
     </div>
-<?php wp_footer();  ?>
+    <?php wp_footer();  ?>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri() . "/assets/js/owl.carousel.min.js" ?>"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                nav:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:3
+                    },
+                    1000:{
+                        items:3
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 </html>
