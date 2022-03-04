@@ -34,7 +34,7 @@
                     </div>
                     <div class="col-4 animatable fadeIn">
                         <i class="fas fa-4x fa-dollar-sign os-icon"></i>
-                        <div class="tag-description">Starting <br> at US$410K</div>
+                        <div class="tag-description">Starting <br> at US$500K</div>
                     </div>
                     <div class="col-4 animatable fadeIn">
                         <i class="fas fa-4x fa-home os-icon"></i>
