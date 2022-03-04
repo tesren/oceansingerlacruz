@@ -415,17 +415,15 @@ h2#slider-text {
     z-index: 100;
     width: 80%;
     top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    right: 10%;
     font-size: 1.6em;
     font-weight: 600;
-    color:white;
-    text-shadow: 1px 1px black;
+    color:#5e7084;
     /* background-color: #557186; */
     /* -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; */
     padding-left: 10px;
-    border-left: white solid 4px;
+    border-left: #5e7084 solid 4px;
 }
 
  h2#slider-text:before{
@@ -1046,7 +1044,7 @@ animation-name: fadeInUp;
     h2#slider-text {
         font-size: 2.3em;
         top: 40%;
-        left: 50%;
+        right: 50%;
     }
 
     .tag-description{
@@ -1097,7 +1095,7 @@ animation-name: fadeInUp;
         font-size: 2.9em;
         width: 60%;
         top: 20%;
-        left: 50%;
+        right: 50%;
     }
 
      .tag-description{
@@ -1166,9 +1164,9 @@ animation-name: fadeInUp;
     
     h2#slider-text {
       z-index: 100;
-      width: 40%;
-      top: 65%;
-      left: 80%;
+      width: fit-content;
+      top: 10%;
+      right: 5%;
       font-size: 2.8em;
     }
 

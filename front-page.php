@@ -2,20 +2,17 @@
 
     <div class="row justify-content-center" id='homeVideoContainer'>
         <video autoplay muted loop autoplay id="homeVideo">
-            <source src="<?php echo get_template_directory_uri() .'/assets/videos/video-ocean-new.m4v';?>" type="video/mp4">
+            <source src="<?php echo get_template_directory_uri() .'/assets/videos/video-ocean-marzo.m4v';?>" type="video/mp4">
         </video>
     </div>
 
-        <div class="row parallax-os-container">
-            <section id="slider"style="height:90vh;">
-                <div id="content-images-slider">
-                    <!-- <div class="image-slider rellax img2" data-rellax-speed="-10" style='background-image: url(<?php echo get_template_directory_uri() .'/assets/images/slider-4.jpg'?>)'></div> -->
-                    <div class="text-slider rellax" data-rellax-speed="-2">
-                        <h2 class="animatable fadeIn" id='slider-text'>Exclusive 12 Unit<br> High-End<br>Boutique Condos</h2>
-                    </div>
-                    <!-- <div class="image-slider img1" style='background-image: url(<?php //echo get_template_directory_uri() .'/assets/images/slider-1.png';?>)'></div> -->
-                    <img class="w-100" src="<?php echo get_template_directory_uri().'/assets/images/gallery/render-building.jpg'; ?>" alt="Building Render" loading="lazy" style="height:90vh; object-fit:cover;">
-                </div>
+        <div class="row position-relative">
+            <section class="px-0"style="height:90vh;">
+                
+                <h2 class="animatable fadeIn" id='slider-text'>Exclusive 12 Unit<br> High-End<br>Boutique Condos</h2>
+                    
+                <img class="w-100" src="<?php echo get_template_directory_uri().'/assets/images/render-facade.jpg'; ?>" alt="Building Render" loading="lazy" style="height:90vh; object-fit:cover; object-position: top;">
+                
             </section>
             <!-- <section id="content"></section> -->
         </div><!-- Parallax -->
@@ -51,38 +48,40 @@
                  <h2 class="text-center animatable fadeInDown">Gallery</h2>
 
                 <div class="row">
-                    <div class="col-md-8 mb-3 animatable fadeInUp">
-                         <img class="w-100" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/pool-render-new.jpg';?>" data-fancybox="gallery" loading="lazy" alt="Pool">
+                    <div class="col-lg-8 mb-3 animatable fadeInUp">
+                         <img class="w-100" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/pool-render-new.jpg';?>" data-fancybox="gallery" loading="lazy" alt="Pool" style="height:560px; object-fit:cover;">
                     </div>
-                    <div class="col-md-4">
-                        <div class="row">
-                            <div class="col-md-12 mb-3 animatable fadeInUp">
-                                <img class="w-100" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/render-kitchen-new.jpg';?>" data-fancybox="gallery" loading="lazy" alt="Kitchen">
-                            </div>
-                            <div class="col-md-12 animatable fadeInUp">
-                                <img class="w-100" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/render-bedroom-new.jpg';?>" data-fancybox="gallery" loading="lazy" alt="Bedroom">
-                            </div>
-                        </div>
+                    <div class="col-lg-4 animatable fadeInDown mb-3">        
+                        <img class="w-100" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/fachada.jpg';?>" data-fancybox="gallery" loading="lazy" alt="Building render" style="height:560px; object-fit:cover;">                                              
                     </div>
+
+                    <div class="col-lg-4 mb-3 animatable fadeInDown">
+                        <img class="w-100" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/terraza-dptos.jpg';?>" data-fancybox="gallery" loading="lazy" alt="Rooftop">
+                    </div>
+                    <div class="col-lg-4 animatable fadeInDown mb-3">
+                        <img class="w-100" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/interior.jpg';?>" data-fancybox="gallery" loading="lazy" alt="Interior">
+                    </div>
+
+                    <div class="col-lg-4 animatable fadeInDown">
+                        <img class="w-100" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/roof.jpg';?>" data-fancybox="gallery" loading="lazy" alt="Rooftop">
+                    </div>
+
+                    <!--Estas imagenes solo se ven si entras a la galeria-->
+                    <img class="d-none" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/roof-2.jpg';?>" data-fancybox="gallery" loading="lazy" alt="Rooftop">
+                    <img class="d-none" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/pool.jpg';?>" data-fancybox="gallery" loading="lazy" alt="Roof top pool">
+                    <img class="d-none" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/recamara.jpg';?>" data-fancybox="gallery" loading="lazy" alt="Bedroom">
+                    <img class="d-none" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/recamara-2.jpg';?>" data-fancybox="gallery" loading="lazy" alt="Bedroom">
+                    <img class="d-none" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/cocina.jpg';?>" data-fancybox="gallery" loading="lazy" alt="Kitchen">
+                    <img class="d-none" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/cocina-sala.jpg';?>" data-fancybox="gallery" loading="lazy" alt="Kitchen">
+
+
+
+                    <?php for($k=1; $k<5; $k++): ?>
+                        <img class='d-none' src="<?php echo get_template_directory_uri() .'/assets/images/gallery/interior-'.$k.'.jpg';?>" alt="Interior" data-fancybox="gallery" loading="lazy">
+                    <?php endfor; ?>
                 </div>
-                <div class="row mt-3">
-                    <div class="col-md-6 mb-3 animatable fadeInDown">
-                        <img class="w-100" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/render-living-new.jpg';?>" data-fancybox="gallery" loading="lazy" alt="Living Room">
-                    </div>
-                    <div class="col-md-6 animatable fadeInDown">
-                        <img class="w-100" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/render-balcony-new.jpg';?>" data-fancybox="gallery" loading="lazy" alt="Balcony">
-
-                        <!--Estas imagenes solo se ven si entras a la galeria-->
-                        <img class="d-none" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/render-rooftop-new.jpg';?>" data-fancybox="gallery" loading="lazy" alt="Roof top">
-                        <img class="d-none" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/render-rooftop-2-new.jpg';?>" data-fancybox="gallery" loading="lazy" alt="Roof top">
-                        <img class="d-none" src="<?php echo get_template_directory_uri() .'/assets/images/gallery/roof-pool.jpg';?>" data-fancybox="gallery" loading="lazy" alt="Roof top Pool">
-
-                        <?php for($k=1; $k<5; $k++): ?>
-                            <img class='d-none' src="<?php echo get_template_directory_uri() .'/assets/images/gallery/interior-'.$k.'.jpg';?>" alt="Interior" data-fancybox="gallery" loading="lazy">
-                        <?php endfor; ?>
-
-                    </div>
-                </div>
+               
+                
             </div>
         
         </div><!-- gallery -->

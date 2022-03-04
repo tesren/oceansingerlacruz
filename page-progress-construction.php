@@ -10,11 +10,11 @@
                         <div class="col-10">
                                 <div id="gallery" style="display:none;">
 
-                                <?php for($i=1; $i < 19; $i++):?>
+                                <?php for($i=1; $i < 21; $i++):?>
                                         <a href="https://oceansingerlacruz.com">
                                         <img alt="Progress construction"
-                                                src="<?php echo get_template_directory_uri().'/assets/images/progress-construction/thumbs/images-'.$i.'.jpg';?>"
-                                                data-image="<?php echo get_template_directory_uri().'/assets/images/progress-construction/high/images-'.$i.'.jpg';?>"
+                                                src="<?php echo get_template_directory_uri().'/assets/images/progress-construction/thumbs/'.$i.'.jpg';?>"
+                                                data-image="<?php echo get_template_directory_uri().'/assets/images/progress-construction/high/'.$i.'.jpg';?>"
                                                 data-description="Progress construction"
                                                 style="display:none">
                                         </a>
